@@ -1,0 +1,157 @@
+body{
+    font-family: 'Quicksand';
+  
+}
+
+.select{
+    border-color: gray;
+    border-radius: 10px;
+    color: gray;
+    font-family: 'Quicksand';
+}
+
+.text-input{
+    font-family: 'Quicksand';
+    color: black;
+}
+
+.floating-menu-list{
+    background-color: #01579b;
+    position: fixed;
+    top: 250px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.logoutBtn{
+    border: none;
+    background-color:#01579b;
+    color: white;
+}
+.floating-menu-promotion{
+    border: 1px solid #01579b;
+    color: #01579b;
+    border-radius: 15px;
+}
+.floating-menu-promotion:hover{
+    border: none;
+    background-color:#01579b;
+    color: white;
+}
+.floating-menu-establishment{
+    border: 1px solid #01579b;
+    color: #01579b;
+    border-radius: 15px;
+}
+.floating-menu-establishment:hover{
+    border: none;
+    background-color:#01579b;
+    color: white;
+}
+.add{
+    border: 1px solid #01579b;
+    color: #01579b;
+    border-radius: 15px;
+}
+.add:hover{
+    border: none;
+    background-color:#01579b;
+    color: white;
+}
+
+.short-margin{
+    margin-top: 25px;
+}
+.quicksand-font{
+    font-family: 'Quicksand';
+}
+.varela-font{
+    font-family: 'Varela Round' ;
+}
+.Fredoka-One{
+    font-family: 'Fredoka One';
+}
+
+.text-header{
+    color: white;
+}
+#addPromotion{
+    border-radius: 10px;
+}
+#addEstablishment{
+    border-radius: 10px;
+}
+img{
+    border-radius: 15px;
+}
+
+label{
+    color: gray;
+    font-size: 17px;
+}
+.container .row{
+    border-radius: 15px;
+}
+
+
+#image{
+    margin-top: 25px;
+}
+
+#addPromotion{
+    margin-top: 25px;
+}
+.text-header{
+    color: #0BAA94;
+    text-align: center;
+}
+.text-header-2{
+    color: #6C6C6D;
+    text-align: center;
+}
+a{
+    text-align: center;
+}
+.tabs{
+    display: none;
+    height: auto;
+}
+.active{
+    display: block;
+}
+.tablinks{
+
+}
+.links div{
+    margin-bottom: 0px;
+}
+
+.list-promotions .promotions-detail-container{
+    border: solid 1px #0BAA94; 
+    margin-top: 25px;
+}
+.margin-text{
+    margin: 10px;
+}
+
+
+.margin-text{
+    margin: 10px;
+}
+
+#promotion-picture{
+    background-image: url('../img/pizza-picture.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+    width: 100%;
+    height: 250px;
+}
+.medium-size-text{
+    font-size: 20px;
+}
+#home{
+    display: block;
+}
+.select{
+    border-radius: 15px;
+}

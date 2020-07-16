@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>Alianzas Credicomer</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Quicksand|Fredoka+One|Varela+Round&display=swap" rel="stylesheet"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/login-style.css"/>
+    <link rel="stylesheet" href="css/loader.css">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+    
+    <!-- <button href="" id="floating-menu-list" class=" floating-menu-list waves-effect btn col l12 s12 tablinks" onclick="openTab(event,'list')">Nueva Promocion</button><button href="" id="floating-menu-list" class=" floating-menu-list waves-effect btn col l12 s12 tablinks" >Lista</button> -->
+    
+    <!--sign in-->
+    <div class="container form-container" id="form-container"> 
+        <h4 style="text-align: center; margin-bottom: 40px;">Administrador Alianzas y beneficios</h4>
+            <div class="row login-form" style="border:solid #0000 3px;">
+            <div class="col l6 m6 s12 login-picture" id="login-picture">
+                <img src="img/landing_picture.svg" alt="" class="col l12 m12 s12">
+            </div>
+            <div class="col l6 m6 s8 offset-s2">
+                <div id="login-form " class="col l8 m8 s12 offset-l2 m2">
+                    <div class="input-field col l12">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email"  id="login-email" required>
+                        <label for="login-email" class="text-field">Email</label>
+                    </div>
+                    <div class="input-field col l12">
+                        <i class="material-icons prefix">lock</i>
+                        <input type="password" id="login-password" required>
+                        <label for="login-password" class="text-field">Contraseña</label>
+                    </div>
+                    <div class="col l12 m12 s12">
+                        <button onclick="login()" class="blue darken-4 z-depth-0 btn col l4 m4 s4 offset-l4 offset-m4 offset-s4 short-margin text-position"><i class="material-icons prefix">exit_to_app</i></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div> <!--end of sign in container-->
+
+    <div id="demo-content" class="demo-content">
+
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
+
+	</div>
+
+    
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-functions.js"></script>
+<script src="./config.js"></script>
+<script src="main.js"></script>
+
+</html>

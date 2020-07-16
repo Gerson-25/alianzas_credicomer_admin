@@ -1,0 +1,18 @@
+.loader-container{
+    position: fixed;
+    height: 30px;
+    width: 100px;
+    top: 40%;
+    left: 45%;
+}
+.circle-loader{
+    align-self: center;
+    border-radius: 60px;
+    height: 100%;
+    width: 30%;
+    background-color: teal;
+    display: inline-block;
+}
+.circle-loader:hover{
+    background-color: yellow;
+}

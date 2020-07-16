@@ -1,0 +1,148 @@
+/*.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  
+  }
+
+  .card-scroll {
+    display: inline-block;
+  }*/
+
+  p{
+    margin: 0px;
+  }
+  .actions-icons{
+      cursor: pointer;
+      display: none;
+  }
+  .establishment-item:hover >.actions-icons{
+      display: block;
+  }
+
+.company-name{
+    font-size: 20px;
+}
+
+  .establishment-item{
+    margin: 10px;
+  }
+
+  .establishment-item>div{
+    margin: 5px;
+  }
+  .edit-container{
+    z-index: 100;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+
+  }
+  .loader-background{
+    z-index: 100;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+  }
+  .edit-chart-container{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .edit-chart{
+    padding-right: 10%;
+    padding-left: 10%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .delete-chart-container{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    z-index: 1000;
+  }
+
+
+  .delete-chart{
+    padding-right: 10%;
+    padding-left: 10%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+  }
+
+  .alert-container{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    padding-top: 15%;
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .alert-chart{
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+  }
+
+  .confirmation-container{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    padding-top: 15%;
+    padding-left: 30%;
+    padding-right: 30%;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .confirmation-chart{
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: auto;
+    width: 100%;
+  }

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Quicksand|Fredoka+One|Varela+Round&display=swap" rel="stylesheet"/>
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/login-style.css"/>
+        <link rel="stylesheet" href="css/loader.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+    
+    <!--header-->
+    <div class=" row menu card-panel" id="menu">
+        <div class="col l12 s8 offset-s2">
+           <a href="menu.html"> <div class="col l4 s12" href="menu.html">
+                <div class="noLogo" id="logo_company">
+                   
+                </div>
+            </div> </a>
+            <div class="col l4" style="padding-top:35px;">
+                <label for="" id="userId"><span class="text-darken-2">Usuario</span></label>
+                <button id="logoutBtn" class="btn-flat logoutBtn  " href="index.html" onclick="logout()"><i class="material-icons prefix">exit_to_app</i></button>
+            </div>
+            
+            <div class="col l2 s6" style="padding-top:35px;">
+                <button href="" id="floating-menu-establishment" class="floating-menu-establishment  btn-flat col l12 tablinks" onclick="openTab(event,'new-establishment')">Establecimiento</button>    
+            </div>
+            <div class="col l2 s6" style="padding-top:35px;">
+                <button href="" id="floating-menu-promotion" class="floating-menu-promotion btn-flat  col l12 tablinks" onclick="openTab(event,'new-promotion')">Promocion</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container tabs row" id="home">
+        <div class="col l6" >
+            <img src="img/home_vector.jpg" alt="" style="width: 100%;">
+        </div>
+        <div>
+            <h4>Agrega tus nuevas promociones <br> 
+            o Establecimientos</h4>
+            <p>
+                Aqui podras administrar los distintos beneficios <br>
+                y alianzas que posse tu empresa
+            </p>
+        </div>
+    </div>
+
+
+    <!--new promotions container-->
+        <div class="container tabs row" id="new-promotion">
+                <div class=" col l6">
+                    <div class="col12">
+                        <h4 style="text-align: center; margin-bottom: 20px;">Agregar Nueva Promocion</h2>
+                    </div>
+                    <div class="col l12 short-margin">
+                        <div class="col l6">
+                            <select id="select-categories" class="browser-default select">
+                            </select>
+                        </div>
+                        <div class="col l6">
+                            <select id="select-establishments" class="browser-default select">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col l12 short-margin">
+                        <div class="col l6">
+                            <div class="input-field">
+                                <i class="material-icons prefix">bookmark</i>
+                                <label class="" for="ptitle">Titulo Promocion</label>
+                                <input type="text" class="text-input" id="ptitle"/>
+                            </div>
+                        </div>
+                        <div class="col l6">
+                            <div class="input-field">
+                                <i class="material-icons prefix">format_quote   </i>
+                                <label for="pdescription">Descripcion de la promocion</label>
+                                <input type="text"class="text-input"  id="pdescription"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l12">
+                        <div class="col l6">
+                            <div class="input-field file-field">
+                                <div class="btn">   
+                                    <span>Buscar</span>
+                                    <input type="file" id="promoSubmit" multiple>
+                                </div>
+                                <div class="file-path-wrapper">
+                                    <input class="file-path validate"  type="text" id="file-path" placeholder="Agrega una imagen">
+                                </div>            
+                            </div>
+                        </div>
+                        <div class="col l6">
+                            <img id="imagePromo" src="img/image-placeholder.png" alt="your image" style="max-height: 150px; max-width: 150px;"  />
+                        </div>
+                    </div> 
+                    <div class="col l12">
+                        <button class=" add btn-flat" style="margin-bottom: 25px;" id="addPromotion">  crear promocion </button>
+                    </div>     
+                </div>
+                <div class="col l6">
+                    <img src="img/promo_vector.jpg" alt="" width="100%">
+                </div>
+            </div>
+ <!--end new promotion-->
+
+    <!--new establishment container-->
+    <div id="new-establishment" class="container row tabs">
+        <div class="col l6 short-margin">
+            <div class="col12">
+                <h4 style="text-align: center; margin-bottom: 20px;">Agregar Nuevo Establecimiento</h2>
+            </div>
+            <div class="col l12 s12">
+                    <div class="col l6">
+                        <select id="select-categories-2" class="browser-default select input-field">
+                        </select>
+                    </div>
+                    <div class="input-field col l6">
+                        <i class="material-icons prefix">store</i>
+                        <label for="ename">Nombre Establecimiento</label>
+                        <input type="text" class="text-input" id="ename"/>
+                    </div>
+            </div>
+    
+            <div class="col l12 s12">
+                <div class="input-field col l6">
+                    <i class="material-icons prefix">add_location</i>
+                    <label for="eaddress">Direccion</label>
+                    <input type="text" class="text-input" id="eaddress"/>
+                </div>
+                <div class="input-field col l6"> 
+                    <i class="material-icons prefix">call</i>
+                    <label for="ephone">Numero de telefonico</label>
+                    <input  type="text" class="text-input" id="ephone" rows="3"/>
+                </div>
+            </div>
+
+            <div class="col l12">
+                <div class="input-field col l12" >
+                    <i class="material-icons prefix">format_quote</i>
+                    <label class="control-label" for="edescription" >Descripcion/Slogan del Establecimiento</label>
+                    <textarea id="edescription" class="materialize-textarea" rows="3"></textarea>
+                </div>
+            </div>
+    
+            <div class="col l12 s12">
+                <div class="input-field file-field col l6">
+                   <!--<input type="file" value="Examinar" class="col l6 input-file" id="establishmentSubmit" /> --> 
+                    <div class="btn">
+                        <span>Buscar</span>
+                        <input type="file" class="blue-grey lighten-5 addEstablishment" id="establishmentSubmit" multiple>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Agrega una imagen">
+                    </div>
+                </div> 
+                <div class="col l6">
+                    <img id="imageEstablishment" class="short-margin" src="img/image-placeholder.png" alt="your image" style="max-height: 150px; max-width: 150px;"  />
+                </div>
+                <div class="col l12" >
+                    <button class=" btn-flat short-margin add"  style="margin-bottom: 20px;"  id="addEstablishment">crear Establecimiento </button> 
+                </div>          
+            </div>
+        </div>
+        <div class="col l6">
+            <img src="img/shop_vector.jpg" alt="" width="100%">
+        </div>
+    </div> <!--end new establishment-->
+
+    <!--loader-->
+    <div id="demo-content" class="demo-content">
+
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+		</div>
+
+	</div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-functions.js"></script>
+<script src="./config.js"></script>     
+<script src="js/menu.js"></script>
+
+</html>

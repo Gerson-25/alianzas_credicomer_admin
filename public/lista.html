@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alianzas Credicomer</title>
+    <link rel="stylesheet" href="css/prueba.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col l12 m12 s12" style="height: auto; border-bottom: gray 0.5px solid;">
+            <div class="col l3 m6 s12" style="height: 80px; line-height: 80px; font-size: 35px;"><img class="company-logo" style="height: 80px;" alt=""></div>
+            <div class="col l2 m6 s12" style="height: 80px; "></div>
+            <div class="col l2 m12 s12" style="height: 80px;"><button class="btn-flat btn-establecimientos" style="height: 100%; width: 100%;">ESTABLECIMIENTO</button></div>
+            <div class="col l2 m12 s12" style="height: 80px;"><button class="btn-flat btn-promociones" style="height: 100%; width: 100%;">PROMOCION</button></div>
+            <div class="col l2 m12 s12" style="height: 80px;  border-bottom: black 3px solid;"><button class="btn-flat btn-lista" style="height: 100%; width: 100%;">VER LISTA</button></div>
+            <div class="col l1 m12 s12" style="height: 80px; line-height: 80px;"><button class="btn-flat color btn-logout white-text waves-effect" style="height: auto; background-color: #D7D7D7;">SALIR</button></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col l12">
+            <div class="col l3">
+                <button style="background-color: #D7D7D7; border-radius: 5px; padding-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 15px; text-align: center;" class="white-text color btn-flat waves-effect btn-back" >INICIO <i class="material-icons left">arrow_back</i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col l12 categories-load">
+            Cargando lista de categorias...
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col l12 categories-container" style="background-color: #D7D7D7; height: auto;">
+            <!--function createCategories-->
+        </div>
+    </div>
+
+    <!--<div class="row">
+        <div class="col l12">
+            <div class="col l6 m6 s12">
+                <div class="card-panel" style="height: 180px;">
+                    <div class="col l4 m4 s4"><img height="100%" src="icons/ic_bussines.svg" alt=""></div>
+                    <div class="col l8 m8 s8">
+                        <p>
+                            Aqui podras agregar todas aquellos beneficios a los que los colaboradores de Credicomer tienen acceso
+                        </p>
+                        <a href="">Agregar Beneficios Credicomer <i class="material-icons left">arrow_forward</i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col l6 m6 s12">
+                <div class="card-panel" style="height: 180px;" >
+                    <div class="col l3 m3 s3"><img height="80%" src="icons/ic_timer.svg" alt=""></div>
+                    <div class="col l9 m9 s9">
+                        <p>
+                            Agregar promociones que tienen un tiempo limitado, agrega inicio y final de la promocion y establece condiciones de uso.
+                        </p>
+                        <a href="">Agregar flashsale <i class="material-icons left">arrow_forward</i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>-->
+
+
+
+
+    
+
+
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-functions.js"></script>
+<script src="config.js"></script> 
+<script src="js/list.js"></script>
+</body>
+</html>

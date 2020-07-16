@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alianzas Credicomer</title>
+    <link rel="stylesheet" href="css/add-loader.css">
+    <link rel="stylesheet" href="css/prueba.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col l12 m12 s12" style="height: auto; border-bottom: gray 0.5px solid;">
+            <div class="col l3 m6 s12" style="height: 80px; line-height: 80px; font-size: 35px;"><img class="company-logo" style="height: 80px;" alt=""></div>
+            <div class="col l2 m6 s12" style="height: 80px; "></div>
+            <div class="col l2 m12 s12" style="height: 80px;   border-bottom: black 3px solid;"><button class="btn-flat btn-establecimientos" style="height: 100%; width: 100%;">ESTABLECIMIENTO</button></div>
+            <div class="col l2 m12 s12" style="height: 80px;"><button class="btn-flat btn-promociones" style="height: 100%; width: 100%;">PROMOCION</button></div>
+            <div class="col l2 m12 s12" style="height: 80px;"><button class="btn-flat btn-lista" style="height: 100%; width: 100%;">VER LISTA</button></div>
+            <div class="col l1 m12 s12" style="height: 80px; line-height: 80px;"><button class="btn-flat color btn-logout white-text waves-effect" style="height: auto; background-color: #D7D7D7;">SALIR</button></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col l12">
+            <div class="col l3">
+                <button style="background-color: #D7D7D7; border-radius: 5px; padding-left: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 15px; text-align: center;" class="white-text btn-flat waves-effect btn-back color" >INICIO <i class="material-icons left">arrow_back</i></button>
+            </div>
+            <div class="col l3 offset-l6">
+                <div class="col l12 m12 s12 input-field white-text">
+                    <select name="" id="" class="drop-down-categories">
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="background-color: #D7D7D7;">
+        <div class="col l12">
+
+            <div class="col l6 m12 s12 establishment-list" style="margin-top: 50px;">
+                <!-- <div class="col l12 m12 s12" style="padding: 50px; height: auto;">
+                    <div class="card-panel">
+    
+                        <div class="row">
+                            <div class="col l12" style="border-bottom: #110256 1px solid;">
+                                <p style="color: #110256; font-weight: bold;">ESTABLECIMIENTOS</p>
+                            </div>
+                        </div>
+    
+                       
+                        <div class="row establishment-list">
+                            fillEstablishment() 
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="col l6 m12 s12" style="padding: 50px; height: auto;">
+                <div class="card-panel">
+                    <div class="row">
+                        <div class="col l12" style="border-bottom: #110256 1px solid;">
+                            <p style="color: #110256; font-weight: bold;">AGREGAR NUEVO ESTABLECIMIENTO</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l12 m12 s12">
+                            <div class="input-field">
+                                <i class="material-icons prefix">store</i>
+                                <label for="ename">Nombre Establecimiento</label>
+                                <input type="text" class="text-input" id="ename"/>
+                            </div>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <div class="input-field">
+                                <i class="material-icons prefix">add_location</i>
+                                <label for="eaddress">Direccion</label>
+                                <input type="text" class="text-input" id="eaddress"/>
+                            </div>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <div class="input-field"> 
+                                <i class="material-icons prefix">call</i>
+                                <label for="ephone">Numero de telefono</label>
+                                <input  type="text" class="text-input" id="ephone" rows="3"/>
+                            </div>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <div class="input-field" >
+                                <i class="material-icons prefix">format_quote</i>
+                                <label class="control-label" for="edescription" >Descripcion/Slogan del Establecimiento</label>
+                                <textarea id="edescription" class="materialize-textarea" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <div class="input-field file-field"> 
+                                 <div class="btn btn-flat" style="background-color: #110256; color: white;">
+                                     <span>Buscar</span>
+                                     <input type="file" class="blue-grey lighten-5 image-submit" id="image-submit" multiple>
+                                 </div>
+                                 <div class="file-path-wrapper">
+                                     <input class="file-path validate" type="text" placeholder="Agrega un logotipo">
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="col l12 m12 s12">
+                            <button class="btn-flat add-establishment"  style=" margin-top: 20px; width: 100%; margin-bottom: 20px; background-color: #110256; color: white;"  id="add-establishment">crear Establecimiento </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="edit-container" class="edit-container" style="display: none;"></div>
+    <div id="loader-background" class="loader-background" style="display: none;"></div>
+
+    <div id="edit-chart-container" class="edit-chart-container" style="display: none;">
+        <div class="edit-chart card-panel">
+            <div class="row">
+                <div class="col l12">
+                    <div class="offset-l11 col l1">
+                        <button class="btn-flat add"  id="close-button" style="background-color: #110256; color: white;">X</button>
+                    </div>
+                </div>
+                <div class="col l12">
+                    <div class="input-field">
+                        <div class="teal-text" id="modification-promo-title">Titulo: </div>
+                        <input type="text" id="new-company-title" class="text-input new-title" style="border-bottom: oldlace 0px solid; font-size: 30px;"/>
+                    </div>
+                </div>
+                <div class="col l12">
+                    <div class="input-field">
+                        <div class="teal-text" id="modification-promo-description" >Descripcion:</div>
+                        <input type="text" id="new-company-description" class="text-input new-description" style="border-bottom: oldlace 0px solid;"/>
+                    </div>
+                </div> 
+                <div class="col l12">
+                    <div class="input-field">
+                        <div class="teal-text" id="modification-promo-description" >Telefono:</div>
+                        <input type="text" id="new-company-phone-number" class="text-input new-phone-number" style="border-bottom: oldlace 0px solid;"/>
+                    </div>
+                </div> 
+                <div class="col l12">
+                    <div class="input-field">
+                        <div class="teal-text" id="modification-promo-description" >Direccion:</div>
+                        <input type="text" id="new-company-address" class="text-input new-direction" style="border-bottom: oldlace 0px solid;"/>
+                    </div>
+                </div> 
+                <div class="col l12 m12 s12">
+                    <div class="input-field file-field"> 
+                         <div class="btn btn-flat" style="background-color: #110256; color: white;">
+                             <span>Actualizar Imagen</span>
+                             <input type="file" class="blue-grey lighten-5 modification-establishment-submit" id="modification-promo-submit" multiple>
+                         </div>
+                         <div class="file-path-wrapper">
+                             <input class="modification-file-path validate" id="modification-file-path" type="text" placeholder="Agrega una imagen">
+                         </div>
+                     </div>
+                </div>
+                <div class="col l5 offset-l7">
+                    <button class="btn-flat modify-button"  style="border-bottom: #110256 1px solid; background-color: white; color: #110256;"><i class="material-icons">checked</i>Modificar</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="delete-chart-container" class="delete-chart-container" style="display: none;">
+        <div class="delete-chart card-panel">
+            <div class="row">
+                <div class="col l12">
+                    <div style="text-align: center;">Esta seguro que quiere desactivar este establecimiento?</div>
+                </div>
+                <div class="col l12">
+                    <div style="text-align: center; font-weight: bold; margin-top: 10px;">
+                        <div class="title-container"></div>
+                    </div>
+                </div>
+                <div class="col l12" style="margin-top: 30px;">
+                    <div class="col l5">
+                        <button class="waves-effect btn-flat lock-promo"  style="border: #110256 1px solid; background-color: white; color: #110256;">DESACTIVAR</button>
+                    </div>
+                    <div class="col l5 offset-l2">
+                        <button class="btn-flat close-delete-chart">CANCELAR</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="alert-container" class="alert-container" style="display: none;">
+        <div class="alert-chart card-panel">
+            <div class="row">
+                <div class="  offset-l10  col l2">
+                    <button class="btn-flat close-alert-button" style="background-color: brown; color: white;"  id="close-alert-button">X</button>
+                </div>
+                <div class="col l12">
+                    <div style="text-align: center; font-size: 30px; color: brown;">ALGO SALIO MAL</div>
+                </div>
+                <div class="col l12">
+                    <div style="text-align: center; margin-top: 25px;">Asegurate de completar todos los campos</div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="confirmation-container" class="confirmation-container" style="display: none;">
+        <div class="confirmation-chart card-panel">
+            <div class="row">
+                <div class="col l12">
+                    <div style="text-align: center; margin-top: 25px;">Agregar el establecimiento <span style="font-weight: bold;" id="selected-establishment"></span> en la categoria <span style="font-weight: bold;" id="selected-category"></span></div>
+                </div>
+                <div class="col l12" style="margin-top: 30px;">
+                    <div class="col l5">
+                        <button class="waves-effect btn-flat confirm-establishment"  style="border: #110256 1px solid; background-color: white; color: #110256;">CONFIRMAR</button>
+                    </div>
+                    <div class="col l5 offset-l2">
+                        <button class="btn-flat close-confirmation-chart">CANCELAR</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <!--data loader-->
+    <div class="wrapper loader"style="display: none;">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <span>Creando</span>
+    </div>
+    
+    
+
+    <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-functions.js"></script>
+    <script src="config.js"></script>
+    <script src="js/establecimientosBWFY.js"></script>
+</body>
+</html>

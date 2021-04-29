@@ -1025,8 +1025,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 
       }
       else{
-          collectionPath='alliance_unicomer';
-          subCollectionPath="promotions_unicomer";  
+        collectionPath="alliance";
+        subCollectionPath="promotions"; 
           setColor = '#2271B3'
           companyImage = "img/logo_unicomer.svg"
       }
@@ -1088,16 +1088,19 @@ function setImage(image){
                 var options = document.querySelectorAll('option')
                 M.FormSelect.init(elements, options);
             });
+            if(categoryFromList != null){
+              console.log("the category was" + categoryFromList)
+              getEstablisments(categoryFromList)
+              elems.value = categoryFromList
+            
+            }
+            else{
+              console.log("the category is empty")
+              getEstablisments(elems.value)
+            }
+
         });
     }
-
-    if(categoryFromList != null){
-        getEstablisments(categoryFromList)
-    }
-    else{
-      
-    }
-    
     
 
     function getEstablisments(category){
@@ -1154,7 +1157,13 @@ function setImage(image){
     }
 
     function fillDropDown(item){
+      if(item == categoryFromList){
+        elems.innerHTML += `<option value=${item} selected>${item}</option>`;
+      }
+      else{
         elems.innerHTML += `<option value=${item}>${item}</option>`;
+      }
+        
     };
 
     document.addEventListener('DOMContentLoaded', e => {

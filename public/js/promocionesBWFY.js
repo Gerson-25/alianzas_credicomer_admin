@@ -1114,7 +1114,7 @@ function changeColor(color){
                 var doc = docData.data();
                 var description = doc.description
                 promoId.push(doc.promotion_id)
-                fillPromos(doc.promotion_name, description)
+                fillPromos(doc.promotion_name, description, doc.rating_avg, doc.image)
                 actionsDelete = document.querySelectorAll('.actions-delete')
                 actionEdit = document.querySelectorAll('.actions-edit')
                 console.log(i)
@@ -1156,13 +1156,20 @@ function changeColor(color){
         });
     }
 
-    function fillPromos(name, description, estado){
+    function fillPromos(name, description, rating, imageUrl){
         promosList.innerHTML += 
         `<div class="col l12 m6 s6" style="padding-left: 50px; padding-right: 50px;">
           <div class="row card-panel">
+          <div class="col s12" style="height: 200px; background-color: cadetblue; background-image: url(${imageUrl}); background-size: cover;">
+          </div>
             <div class="col s12" style="border-bottom: black 1px solid;">
-                <p style="color: black; font-weight: bold; font-size: 20px;" class="promo-title">${name}</p>
+                <p style="color: black; font-weight: bold; font-size: 20px; margin-top:30px;" class="promo-title">${name}</p>
                 <p style="color: ${setColor}; margin-top:10px; margin-bottom:10px;" class="promo-description">${description}</p>
+                <div class="col s12" style="padding: 0px; margin-bottom:10px;">
+                  <i class="material-icons prefix col s1" style="color: ${setColor};">star</i>
+                  <p style="color: ${setColor};" class="col s2" href="">${rating}</p>
+                  <a class="col s9" href="" style="color: ${setColor};">Ver comentarios...</a>
+                </div>
             </div>
             <div class="col s12" style="padding-top: 20px;">
                 <div class="col s5">

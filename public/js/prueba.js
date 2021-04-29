@@ -6,6 +6,7 @@ const btnLogout = document.querySelector('.btn-logout')
 const colorRequest = document.querySelectorAll('.color')
 const btnListaHome = document.querySelector('.btn-lista-home')
 const homeImage = document.querySelector('.home-image')
+
 let setColor;
 let companyImage;
 let homeImageSrc;

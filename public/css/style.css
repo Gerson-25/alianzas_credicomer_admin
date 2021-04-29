@@ -1,6 +1,5 @@
 body{
     font-family: 'Quicksand';
-  
 }
 
 .select{
@@ -118,9 +117,7 @@ a{
 .active{
     display: block;
 }
-.tablinks{
 
-}
 .links div{
     margin-bottom: 0px;
 }
